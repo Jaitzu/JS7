@@ -24,19 +24,26 @@ for(i=0; i<pics.length; i++)
 
 
 document.getElementsByTagName('img')[0].addEventListener("click",function(evt){
-    document.getElementsByTagName('img')[3].src= pics[0].big;
+    document.getElementsByTagName('img')[3].src= pics[2].big;
+    document.getElementsByTagName('div')[0].setAttribute('class', 'visible');
 
 
 });
 
 document.getElementsByTagName('img')[1].addEventListener("click",function(evt){
     document.getElementsByTagName('img')[3].src= pics[1].big;
+    document.getElementsByTagName('div')[0].setAttribute('class', 'visible');
 
 
 });
 
 document.getElementsByTagName('img')[2].addEventListener("click",function(evt){
-    document.getElementsByTagName('img')[3].src= pics[2].big;
+    document.getElementsByTagName('img')[3].src= pics[0].big;
+    document.getElementsByTagName('div')[0].setAttribute('class', 'visible');
 
 
+});
+
+document.getElementsByTagName('img')[3].addEventListener("click",function(evt) {
+    document.getElementsByTagName('div')[0].setAttribute('class', 'hidden');
 });
